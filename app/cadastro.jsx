@@ -6,15 +6,25 @@ import Logotipo from '../components/Logotipo';
 import CampoFormulario from '../components/CampoFormulario';
 import Botao from '../components/Botao';
 
-export default function Login () {
+export default function Cadastro () {
     return (
         <View style={estilos.container}>
             <Logotipo />
 
-            <View>
+            <View style={estilos.campos}>
+                <CampoFormulario 
+                    titulo="Nome"
+                    textoTemporario="Digite seu nome"
+                />
+
                 <CampoFormulario 
                     titulo="Telefone"
-                    textoTemporario="Digite seu telefone"
+                    textoTemporario="Ex: (99) 99999-9999"
+                />
+
+                <CampoFormulario 
+                    titulo="Email"
+                    textoTemporario="exemplo@email.com"
                 />
 
                 <CampoFormulario 
@@ -24,12 +34,6 @@ export default function Login () {
             </View>
 
             <View>
-                <Botao 
-                    titulo="Entrar"
-                    acaoClique={() => router.push('/home')}
-                    estaCarregando={false}
-                />
-
                 <Botao 
                     titulo="Criar Conta"
                     acaoClique={() => router.push('/cadastro')}
@@ -45,5 +49,11 @@ const estilos = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+    },
+    campos: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 10,
+        marginTop: 20
     }
 });
