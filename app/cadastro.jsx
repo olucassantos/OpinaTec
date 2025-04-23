@@ -48,7 +48,9 @@ const estilos = StyleSheet.create({
     container: {
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
+        flex: 1,
+        justifyContent: 'space-between',
+        padding: 20,
     },
     campos: {
         display: 'flex',

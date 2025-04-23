@@ -9,7 +9,7 @@ const Botao = ({ titulo, acaoClique, estaCarregando }) => {
             activeOpacity={0.7}
             style={estilos.botao}
         >
-            <Text>
+            <Text style={estilos.textoBotao}>
                 {titulo}
             </Text>
         </TouchableOpacity>
@@ -27,7 +27,11 @@ const estilos = StyleSheet.create({
         marginVertical: 5,
         alignItems: 'center',
         justifyContent: 'center',
-    }
+    },
+    textoBotao: {
+        color: '#ffffff',
+        fontSize: 16,
+    },
 });
 
 export default Botao;

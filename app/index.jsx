@@ -1,21 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Redirect } from 'expo-router';
 
-// Importa o logotipo
-import Logotipo from '../components/Logotipo';
-
-export default function App() {
-    return (
-        <View style={styles.container}>
-            <Logotipo />
-
-            <StatusBar style="auto" />
-        </View>
-    );
+export default function Index() {
+    return <Redirect href="/login" />;
 }
-
-const styles = StyleSheet.create({
-    container: {
-        
-    },
-});
