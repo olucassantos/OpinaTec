@@ -8,7 +8,7 @@ import {
     StyleSheet,
 } from 'react-native';
 
-const CampoFormulario = ({ titulo, textoTemporario, mostraTitulo = false }) => {
+const CampoFormulario = ({ titulo, textoTemporario, mostraTitulo = false, valor, aoAlterarTexto }) => {
     return (
         <View>
             {/* Decide com base no parametro se vai mostrar o titulo */}
@@ -22,6 +22,8 @@ const CampoFormulario = ({ titulo, textoTemporario, mostraTitulo = false }) => {
                 <TextInput 
                     placeholder={textoTemporario}
                     style={estilos.campo}
+                    onChangeText={aoAlterarTexto}
+                    value={valor}
                 />
             </View>
         </View>

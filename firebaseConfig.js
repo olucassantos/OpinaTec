@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMINIO.firebaseapp.com",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_BUCKET.appspot.com",
-  messagingSenderId: "SEU_MESSAGING_ID",
-  appId: "SEU_APP_ID"
+  apiKey: "AIzaSyAXUfBQuWCPw9V0vR12lNhECoscttb_CmA",
+  authDomain: "opinatec-74d85.firebaseapp.com",
+  projectId: "opinatec-74d85",
+  storageBucket: "opinatec-74d85.firebasestorage.app",
+  messagingSenderId: "679129672881",
+  appId: "1:679129672881:web:80e38e2079539dbcca4690"
 };
 
 const app = initializeApp(firebaseConfig);
